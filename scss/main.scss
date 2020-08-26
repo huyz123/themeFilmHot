@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+
+$Laptop-L: 1440px;
+$Laptop: 1024px;
+$Tablet: 768px;
+$Mobile: 576px;
+$Mobile-L : 426px;
+$Mobile-M : 375px;
+$Mobile-S : 320px;
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: $Laptop) {
+    max-width: 960px;
+  }
+  @media (max-width: $Tablet) {
+    max-width: 720px;
+  }
+  @media (max-width: $Mobile) {
+    max-width: 540px;
+  }
+  @media (max-width: $Mobile-L) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 426px;
+  }
+  @media (max-width: $Mobile-M) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 375px;
+  }
+}
+
+@keyframes scaleAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+@import "style";
+@charset "UTF-8";
